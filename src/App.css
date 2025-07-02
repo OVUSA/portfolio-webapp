@@ -1,38 +1,210 @@
-.App {
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #f2f2f7; /* iOS background */
+  color: #111;
+}
+
+.app {
+  max-width: 960px;
+  margin: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Reusable card style for all sections */
+section {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+section:hover {
+  transform: translateY(-2px);
+}
+
+section h2 {
+  font-size: 1.7rem;
+  margin-top: 0;
+  color: #1c1c1e;
+}
+
+section p,
+section li {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #3a3a3c;
+}
+
+/* Hero section as a special card */
+.hero {
+  background: linear-gradient(to bottom right, #dfe6ec, #f6f7fb);
   text-align: center;
+  padding: 3rem 1rem;
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero h1 {
+  font-size: 2.8rem;
+  margin: 0;
+  color: #1d1d1f;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero p {
+  font-size: 1.2rem;
+  color: #48484a;
+  margin-top: 0.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cta {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.6rem;
+  background: #007aff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.cta:hover {
+  background: #0059c1;
+}
+
+/* Skills list */
+.skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills li {
+  margin: 0.5rem 0;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.skills li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #007aff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #8e8e93;
+  margin-top: 2rem;
+}
+.contact {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #007aff;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.contact-links a:hover {
+  color: #005ecb;
+}
+
+.contact-links svg {
+  font-size: 1.2rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.project-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.project-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: #1d1d1f;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #3a3a3c;
+  margin: 0.75rem 0;
+  flex-grow: 1;
+}
+
+.project-card a {
+  margin-top: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #007aff;
+  transition: color 0.3s;
+}
+
+.project-card a:hover {
+  color: #005ecb;
 }
