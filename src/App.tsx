@@ -1,5 +1,5 @@
-import React, { useRef, RefObject, useEffect } from 'react'; // Import useEffect
-import { Github, Linkedin, Mail, Cloud, Code, Briefcase, User, Star } from 'lucide-react'; // Assuming lucide-react is available
+import React, { useRef, RefObject, useEffect } from 'react';
+import { Github, Linkedin, Mail, Cloud, Code, Briefcase, User, Star } from 'lucide-react';
 
 // --- Type Definitions ---
 /**
@@ -133,7 +133,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ contactRef }) => (
         Hi, I'm <span className="text-blue-600">Olga Velichko</span>
       </h1>
       <p className="text-lg sm:text-xl text-gray-700 mb-8 animate-fade-in-up delay-200">
-        Junior Software Engineer passionate about building robust backend systems and scalable cloud solutions.
+        Software Engineer passionate about building robust backend systems and scalable cloud solutions.
       </p>
       <Button onClick={() => scrollToSection(contactRef)} className="animate-fade-in-up delay-400">
         Get in Touch
@@ -181,7 +181,7 @@ const ProjectsSection: React.FC = () => {
     {
       title: "E-commerce Backend API",
       description: "A RESTful API for an e-commerce platform, handling product management, user authentication, and order processing.",
-      tech: ["Node.js", "Express", "MongoDB", "JWT"],
+      tech: ["Node.js", "React","Typescript", "MongoDB", "JWT","AWS Cognito"],
       link: "#", // Placeholder link
       github: "#" // Placeholder link
     },
@@ -195,7 +195,7 @@ const ProjectsSection: React.FC = () => {
     {
       title: "Real-time Chat Application",
       description: "Developed a real-time chat application backend using WebSockets, supporting multiple chat rooms and user presence.",
-      tech: ["Python", "Flask", "Socket.IO", "Redis"],
+      tech: ["Java", "SpringBoot", "Socket.IO", "MySQL Amazon RDS", "React","Typescript"],
       link: "#",
       github: "#"
     },
@@ -242,7 +242,7 @@ const SkillsSection: React.FC = () => {
   const skills: Skills = {
     "Programming Languages": ["Java","C#","TypeScript","Python"],
     "Cloud Platforms": ["AWS (EC2, S3, Lambda, RDS)", "Docker", "Kubernetes"],
-    "Databases": ["MongoDB", "PostgreSQL", "MySQL","OracleDB", "Redis"],
+    "Databases": ["MongoDB", "MySQL","OracleDB", "Redis"],
     "Frameworks & Libraries": ["React","Angular","Spring Boot", ".NET"],
     "Tools & Methodologies": ["Git", "CI/CD", "RESTful APIs", "Microservices", "Agile"]
   };
@@ -252,7 +252,7 @@ const SkillsSection: React.FC = () => {
       <div className="max-w-screen-lg mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-12">My Skills</h2>
         <p className="text-lg text-gray-700 text-center max-w-2xl mx-auto mb-12">
-          Here's a comprehensive overview of my technical expertise, spanning various programming languages, cloud platforms, databases, frameworks, and development tools.
+          Here's an overview of my technical knowledge, spanning various programming languages, cloud platforms, databases, frameworks, and development tools.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {Object.entries(skills).map(([category, items], index) => (
@@ -296,24 +296,6 @@ const ContactSection: React.FC = () => (
           <Github className="w-6 h-6 mr-2" /> GitHub Profile
         </a>
       </div>
-      {/* A simple contact form could go here if desired, but for minimalism, links are often preferred */}
-      {/* <Card className="max-w-md mx-auto p-8">
-        <form className="space-y-4">
-          <div>
-            <label htmlFor="name" className="block text-left text-sm font-medium text-gray-700">Name</label>
-            <input type="text" id="name" name="name" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500" />
-          </div>
-          <div>
-            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700">Email</label>
-            <input type="email" id="email" name="email" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500" />
-          </div>
-          <div>
-            <label htmlFor="message" className="block text-left text-sm font-medium text-gray-700">Message</label>
-            <textarea id="message" name="message" rows="4" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"></textarea>
-          </div>
-          <Button type="submit" className="w-full">Send Message</Button>
-        </form>
-      </Card> */}
     </div>
   </section>
 );
