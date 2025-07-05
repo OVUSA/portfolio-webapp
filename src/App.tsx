@@ -197,7 +197,7 @@ const ProjectsSection: React.FC = () => {
       description: "Developed a real-time chat application backend using WebSockets, supporting multiple chat rooms and user presence.",
       tech: ["Java", "SpringBoot", "Socket.IO", "MySQL Amazon RDS", "React","Typescript"],
       link: "#",
-      github: "#"
+      github: "https://github.com/OVUSA/chat-bot"
     },
   ];
 
@@ -250,7 +250,7 @@ const SkillsSection: React.FC = () => {
   return (
     <section className="py-20 bg-white px-4" id="skills">
       <div className="max-w-screen-lg mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-12">My Skills</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-12">Skills</h2>
         <p className="text-lg text-gray-700 text-center max-w-2xl mx-auto mb-12">
           Here's an overview of my technical knowledge, spanning various programming languages, cloud platforms, databases, frameworks, and development tools.
         </p>
@@ -289,7 +289,7 @@ const ContactSection: React.FC = () => (
         <a href="mailto:ovelichko.austin@gmail.com" className="flex items-center justify-center text-blue-600 hover:text-blue-800 font-medium text-lg">
           <Mail className="w-6 h-6 mr-2" /> ovelichko.austin@gmail.com
         </a>
-        <a href="https://linkedin.com/in/olgavelichko" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center text-blue-600 hover:text-blue-800 font-medium text-lg">
+        <a href="https://www.linkedin.com/in/olga-velichko" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center text-blue-600 hover:text-blue-800 font-medium text-lg">
           <Linkedin className="w-6 h-6 mr-2" /> LinkedIn Profile
         </a>
         <a href="https://github.com/ovusa" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center text-blue-600 hover:text-blue-800 font-medium text-lg">

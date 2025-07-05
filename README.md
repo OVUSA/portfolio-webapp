@@ -1,1 +1,3 @@
 My Portfolio Web App is a personal portfolio site built to showcase my projects and skills as an Associate Software Engineer. It allows visitors to learn about my work, view my projects, and contact me directly. The app is hosted on AWS to demonstrate my cloud computing skills and the practical application of my AWS Cloud Practitioner certification.
+
+To view the project http://personal-porfolio-ovelichko.s3-website-us-east-1.amazonaws.com/#
