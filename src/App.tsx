@@ -1,5 +1,7 @@
 import React, { useRef, RefObject, useEffect } from 'react';
 import { Github, Linkedin, Mail, Cloud, Code, Briefcase, User, Star } from 'lucide-react';
+import photo from "../src/data/photo.jpg"
+
 
 // --- Type Definitions ---
 /**
@@ -152,20 +154,20 @@ const AboutSection: React.FC = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="text-lg text-gray-700 space-y-6">
           <p>
-            As a junior software engineer, I thrive on solving complex problems and building efficient, reliable software. My journey into tech began with a fascination for how data flows and how applications scale, leading me to specialize in **backend development** and **cloud computing**.
+          As a software engineer, I thrive on solving complex problems and building efficient, reliable software.
           </p>
           <p>
             I have a strong foundation in designing APIs, managing databases, and deploying applications on cloud platforms. I'm always eager to learn new technologies and apply best practices to create impactful solutions.
           </p>
           <p>
-            My goal is to contribute to projects that leverage the power of the cloud to deliver seamless user experiences and robust, secure services.
+          My goal is to help your application leverage the power of the cloud to deliver seamless user experiences and robust, secure, and cost-efficient services.
           </p>
         </div>
         <div className="flex justify-center">
           <img
-            src="https://placehold.co/300x300/e0e0e0/555555?text=Your+Photo"
-            alt="Your Photo"
-            className="rounded-full shadow-lg w-64 h-64 object-cover border-4 border-gray-100"
+            src={photo}
+            alt="photo1"
+            className="rounded-full shadow-lg w-80 h-80 object-cover border-4 border-gray-100"
           />
         </div>
       </div>
@@ -250,7 +252,7 @@ const SkillsSection: React.FC = () => {
   return (
     <section className="py-20 bg-white px-4" id="skills">
       <div className="max-w-screen-lg mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-12">My Skills</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-12">Skills</h2>
         <p className="text-lg text-gray-700 text-center max-w-2xl mx-auto mb-12">
           Here's an overview of my technical knowledge, spanning various programming languages, cloud platforms, databases, frameworks, and development tools.
         </p>
@@ -287,9 +289,9 @@ const ContactSection: React.FC = () => (
       </p>
       <div className="flex flex-col sm:flex-row justify-center gap-6 mb-12">
         <a href="mailto:ovelichko.austin@gmail.com" className="flex items-center justify-center text-blue-600 hover:text-blue-800 font-medium text-lg">
-          <Mail className="w-6 h-6 mr-2" /> ovelichko.austin@gmail.com
+          <Mail className="w-6 h-6 mr-2" /> Email
         </a>
-        <a href="https://linkedin.com/in/olgavelichko" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center text-blue-600 hover:text-blue-800 font-medium text-lg">
+        <a href="https://linkedin.com/in/olga-velichko" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center text-blue-600 hover:text-blue-800 font-medium text-lg">
           <Linkedin className="w-6 h-6 mr-2" /> LinkedIn Profile
         </a>
         <a href="https://github.com/ovusa" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center text-blue-600 hover:text-blue-800 font-medium text-lg">
