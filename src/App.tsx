@@ -1,6 +1,6 @@
 import React, { useRef, RefObject, useEffect } from 'react';
 import { Github, Linkedin, Mail, Cloud, Code, Briefcase, User, Star } from 'lucide-react';
-import photo from "../src/data/photo.jpg"
+import photo from "../src/data/photo.png"
 
 
 // --- Type Definitions ---
@@ -188,11 +188,11 @@ const ProjectsSection: React.FC = () => {
       github: "#" // Placeholder link
     },
     {
-      title: "Serverless Image Processing",
-      description: "Implemented a serverless function on AWS Lambda to process and optimize uploaded images, integrated with S3.",
-      tech: ["AWS Lambda", "S3", "Node.js", "Serverless Framework"],
+      title: "Apple watch note-taking app ",
+      description: "Apple Watch Notes App. A lightweight note-taking app that lets users create and update notes using Siri. The app integrates seamlessly with the iPhone notes app and supports full CRUD functionality.",
+      tech: ["C# .NET", "SQLite", "Xcode (SwiftUI)", "AWS Lambda"],
       link: "#",
-      github: "#"
+      github: "https://github.com/OVUSA/AppleWatch-Notes-app"
     },
     {
       title: "Real-time Chat Application",
